@@ -4,3 +4,17 @@ git remote -v -------------- check git origin
 git add . --------- add all files in git
 git commit -m"Message" --------- add message wha you are commiting
 git push origin master ---------- add file to remote origin
+
+
+
+…or create a new repository on the command line
+echo "# ActivationKeys" >> README.md
+git init
+git commit -m "first commit"
+git remote add origin https://github.com/deadhossain/ActivationKeys.git
+git push -u origin master
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/deadhossain/ActivationKeys.git
+git push -u origin master
