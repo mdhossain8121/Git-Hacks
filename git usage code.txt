@@ -18,3 +18,7 @@ git push -u origin master
 …or push an existing repository from the command line
 git remote add origin https://github.com/deadhossain/ActivationKeys.git
 git push -u origin master
+
+
+SSL Certificate problem -- self signed certificate (Solve)
+git config http.sslVerify false
