@@ -38,3 +38,6 @@ Edit: May be obvious but also add */ to the git ignore to also ignore sub folder
 git config -l | grep url ---------remote.origin.url=https://github.com/github-username/github-repository-name.git
 git remote set-url origin "https://github-username@github.com/github-username/github-repository-name.git" --------You need to add your GitHub username to the github.com portion of the URL.
 git config -l | grep url --------- To verify the new remote URL setting, type the following command:
+
+----------- How to disable gnome-ssh-askpass? --------
+unset SSH_ASKPASS
