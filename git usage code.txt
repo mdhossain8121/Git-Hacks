@@ -59,3 +59,9 @@ Create a system config:
 
 $ git config --system user.name "John Doe" 
 And as you may guess, project overrides global and global overrides system.
+
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
