@@ -1,3 +1,6 @@
+git config --local user.name "deadhossain" -------- individual project user
+git config --local user.email md.hossain8121@gmail.com -------- individual project email
+
 git init ---------- initialisation
 git remote add origin urllink ----------------- add git origin url
 git remote -v -------------- check git origin
