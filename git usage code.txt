@@ -37,10 +37,12 @@ The * line tells git to ignore all files in the folder, but !.gitignore tells gi
 
 Edit: May be obvious but also add */ to the git ignore to also ignore sub folders.
 
+
 ------------How To Fix 403 Forbidden Error Pushing to GitHub via HTTPS-------------
 git config -l | grep url ---------remote.origin.url=https://github.com/github-username/github-repository-name.git
 git remote set-url origin "https://github-username@github.com/github-username/github-repository-name.git" --------You need to add your GitHub username to the github.com portion of the URL.
 git config -l | grep url --------- To verify the new remote URL setting, type the following command:
+
 
 ----------- How to disable gnome-ssh-askpass? --------
 unset SSH_ASKPASS
@@ -68,3 +70,18 @@ git branch -d localBranchName
 
 // delete branch remotely
 git push origin --delete remoteBranchName
+
+------------------------------ Undo Pull ---------------------------------
+//Git keeps track of updates to the tip of branches using a mechanism called reference logs, or "reflogs."
+//show history of commit
+git reflog --pretty=short
+git reflog --date=iso
+
+//git fetch is the command that tells your local git to retrieve the latest meta-data info from the original 
+//(yet doesn’t do any file transferring. It’s more like just checking to see if there are any changes available).
+//git pull on the other hand does that AND brings (copy) those changes from the remote repository.
+git fetch --all
+git checkout origin/master -- application/controllers/sales.php
+git checkout origin/master -- application/views/reports/invoice_receipt.php
+git checkout origin/master -- application/views/sales/invoice_preparation.php
+
