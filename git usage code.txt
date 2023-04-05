@@ -85,3 +85,6 @@ git checkout origin/master -- application/controllers/sales.php
 git checkout origin/master -- application/views/reports/invoice_receipt.php
 git checkout origin/master -- application/views/sales/invoice_preparation.php
 
+------------------------------ History commandline ---------------------------------
+git log --pretty=oneline
+
